@@ -8,17 +8,17 @@ int main() {
 	int n1, n2, resultado, i;
 
 	resultado = 0;
-	cout << "Digite o menor número: ";
+	cout << "Digite o menor nÃºmero: ";
 	cin >> n1;
 	i = n1 + 1;
-	cout << endl << "Digite o maior número: ";
+	cout << endl << "Digite o maior nÃºmero: ";
 	cin >> n2;
 	cout << endl;
 
 	while(i > n1 && i < n2) {
 		if((i % 3) == 0 && (i % 4) == 0) {
 			resultado = resultado + i;
-			cout << i << " é divisivel por 3 e 4" << endl;
+			cout << i << " Ã© divisivel por 3 e 4" << endl;
 		}
 		i++;
 	}
@@ -29,5 +29,5 @@ int main() {
 void exibir(int resultado) {
 	cout << fixed;
     cout.precision(2);
-	cout << endl << "A soma dos valores é: " << resultado << endl;
+	cout << endl << "A soma dos valores Ã©: " << resultado << endl;
 }
