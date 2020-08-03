@@ -1,4 +1,4 @@
- /* Quadro resumo das Declarações de funções*/
+ /* Quadro resumo das DeclaraÃ§Ãµes de funÃ§Ãµes*/
 double ler_A();
 double ler_B();
 double ler_C();
@@ -32,8 +32,8 @@ double ler_C() {
 
 /Recebe a, b, c, calcula e armazena o valor de Delta atraves do return/
 double cal_Delta(double a, double b, double c) {
-	double d = pow(b,2) - …
-/* Quadro resumo das Declarações de funções*/ 
+	double d = pow(b,2) - â€¦
+/* Quadro resumo das DeclaraÃ§Ãµes de funÃ§Ãµes*/ 
 
 double lerA(); 
 
@@ -55,9 +55,9 @@ double a, b, c, sem, area;
 
 int tecla; 
 
-MENU: /* marca um ponto no código para retorno*/ 
+MENU: /* marca um ponto no cÃ³digo para retorno*/ 
 
-cout << "\nMenu\n1-Ler\n2-Calcular \n3-Exibir \n4-Sair \nOpção:"; 
+cout << "\nMenu\n1-Ler\n2-Calcular \n3-Exibir \n4-Sair \nOpÃ§Ã£o:"; 
 
 cin >> tecla; 
 
@@ -113,7 +113,7 @@ goto MENU;
 
 if(tecla==4){ 
 
-cout << "\nO programa será finalizado!\n"; 
+cout << "\nO programa serÃ¡ finalizado!\n"; 
 
 system ("pause");  
 
@@ -201,7 +201,7 @@ void exibir (double va, double vb, double vc, double s, double ah)
 
 if (s<=0){ 
 
-cout << "\nImpossível calcular\nSemiperímetro é menor ou igual a 0!\n"; 
+cout << "\nImpossÃ­vel calcular\nSemiperÃ­metro Ã© menor ou igual a 0!\n"; 
 
 }  
 
@@ -213,8 +213,8 @@ cout << "\nValor de ....B:" <<vb;
 
 cout << "\nValor de ....C:" <<vc; 
 
-cout << "\nValor do semiperímetro:"<<s; 
+cout << "\nValor do semiperÃ­metro:"<<s; 
 
-cout << "\nValor da área é:"<<ah; 
+cout << "\nValor da Ã¡rea Ã©:"<<ah; 
 
 }
