@@ -1,0 +1,87 @@
+#include <iostream>   
+#include <cstdlib>
+#include <math.h>
+#include <iomanip>
+using namespace std;
+double lera ()
+{ 
+double a;
+cout << "Digite o 1º valor:"; 
+cin >> a;
+return a;
+}
+double lerb()
+{ 
+double b;
+cout << "Digite o 2º valor:"; 
+cin >>b;    
+return b;
+}
+double lerc() 
+{ 
+double c;   
+cout << "Digite o 3º valor:"; 
+cin >> c;     
+return c; 
+}
+double calc_mg (double a, double b, double c)
+{
+double mg = pow(a*b*c,0.3);
+return mg;
+}
+void exibir (double a, double b, double c, double mg)
+{
+cout<<setfill('.');
+cout<<fixed<<setprecision(2);  
+cout<<"\n1º valor:"<<setw(10)<<a;  
+cout<<"\n2º valor:"<<setw(10)<<b;  
+cout<<"\n3º valor:"<<setw(10)<<c; 
+cout<<"\nValor da média geometrica é :"<<setw(10)<<mg;
+system("pause"); 
+}
+int main () 
+{
+setlocale(LC_ALL, "Portuguese"); 
+double a, b, c, mg;     
+int tecla;
+MENU:   
+cout << "\nmenu\n1 Ler\n2 Calcular\n3 Exibir\n4 Sair\nEscolha\n";      
+cin >> tecla;
+if(tecla==1)  
+{         
+a = lera ();    
+b = lerb ();    
+c = lerc ();
+cout<<"Dados lidos\n";
+system("pause");
+system("cls");
+goto MENU;
+return 0;                     
+}
+else if (tecla == 2) 
+{  
+mg=calc_mg(a, b, c);
+cout<<"Dados calculados\n";
+system("pause");
+system("cls");
+goto MENU;
+return 0;   
+}                       
+else if (tecla==3)   
+{  
+exibir (a, b, c, mg);
+cout<<"Dados exibido\n";
+system("pause");
+system("cls");
+goto MENU;
+return 0;         
+}	  
+else if (tecla ==4)   
+{
+cout << "\nO programa será finalizado!\n";  
+system ("pause");   
+exit (0);  
+}
+goto MENU;
+return 0;
+}
