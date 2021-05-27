@@ -1,2 +1,2 @@
 # exercicios_C
-Exercicios feitos em C++ para fins acadêmicos. 
+Esses são exercicios do curso na linguagem C++ para fins acadêmicos . 
